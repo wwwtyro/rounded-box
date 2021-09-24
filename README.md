@@ -6,7 +6,7 @@ Generates a rounded box mesh centered on the origin with configurable dimensions
   <img src="media/screenshot.webp">
 </p>
 
-[Live Demo](https://wwwtyro.github.io/rounded-cube)
+[Live Demo](https://wwwtyro.github.io/rounded-box)
 
 ## Installation
 
