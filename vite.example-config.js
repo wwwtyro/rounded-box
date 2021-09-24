@@ -4,6 +4,7 @@ const { defineConfig } = require("vite");
 
 module.exports = defineConfig({
   root: "./example",
+  base: "./",
   build: {
     outDir: "../docs",
     emptyOutDir: true,
