@@ -1,7 +1,7 @@
 import REGL from "regl";
 import { mat4 } from "gl-matrix";
 import Trackball from "trackball-controller";
-import { generateRoundedBox } from "../src/rounded-box";
+import { generateRoundedBox } from "../src/index";
 
 import { textureData } from "./texture";
 

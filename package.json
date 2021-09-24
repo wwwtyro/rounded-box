@@ -1,6 +1,6 @@
 {
   "name": "rounded-box",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Generates a rounded box mesh centered on the origin with configurable dimensions, corner and edge radius, and resolution.",
   "keywords": [
     "3D",
@@ -25,21 +25,22 @@
   },
   "license": "Unlicense",
   "files": [
-    "dist"
+    "lib"
   ],
-  "main": "./dist/rounded-box.umd.js",
-  "module": "./dist/rounded-box.es.js",
+  "main": "./lib/index.umd.js",
+  "module": "./lib/index.es.js",
+  "types": "./lib/index",
   "scripts": {
     "dev": "vite --config vite.example-config.js",
     "build-lib": "tsc && vite --config vite.lib-config.js build",
     "build-example": "tsc && vite --config vite.example-config.js build",
-    "clean": "rm -rf dist docs types",
+    "clean": "rm -rf lib docs",
     "build": "npm run clean && npm run build-lib && npm run build-example"
   },
   "exports": {
     ".": {
-      "import": "./dist/rounded-box.es.js",
-      "require": "./dist/rounded-box.umd.js"
+      "import": "./lib/index.es.js",
+      "require": "./lib/index.umd.js"
     }
   },
   "devDependencies": {

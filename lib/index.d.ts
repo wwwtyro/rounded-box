@@ -11,3 +11,4 @@ export declare function generateRoundedBox(options?: Options): {
     cells: number[][];
 };
 export {};
+//# sourceMappingURL=index.d.ts.map
