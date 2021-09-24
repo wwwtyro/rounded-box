@@ -1,0 +1,54 @@
+{
+  "name": "rounded-box",
+  "version": "1.0.0",
+  "description": "Generates a rounded box mesh centered on the origin with configurable dimensions, corner and edge radius, and resolution.",
+  "keywords": [
+    "3D",
+    "rounded box",
+    "rounded cube",
+    "box",
+    "cube",
+    "mesh",
+    "geometry",
+    "procedural",
+    "webgl"
+  ],
+  "author": {
+    "name": "Rye Terrell",
+    "email": "ryeterrell@ryeterrell.net",
+    "url": "https://wwwtyro.net"
+  },
+  "homepage": "https://github.com/wwwtyro/rounded-box",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wwwtyro/rounded-box.git"
+  },
+  "license": "Unlicense",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/rounded-box.umd.js",
+  "module": "./dist/rounded-box.es.js",
+  "scripts": {
+    "dev": "vite --config vite.example-config.js",
+    "build-lib": "tsc && vite --config vite.lib-config.js build",
+    "build-example": "tsc && vite --config vite.example-config.js build",
+    "clean": "rm -rf dist docs",
+    "build": "npm run clean && npm run build-lib && npm run build-example"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/rounded-box.es.js",
+      "require": "./dist/rounded-box.umd.js"
+    }
+  },
+  "devDependencies": {
+    "typescript": "^4.3.2",
+    "regl": "^2.1.0",
+    "vite": "^2.5.4",
+    "trackball-controller": "^2.0.0"
+  },
+  "dependencies": {
+    "gl-matrix": "^3.3.0"
+  }
+}
