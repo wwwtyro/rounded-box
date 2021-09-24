@@ -1,6 +1,6 @@
 {
   "name": "rounded-box",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generates a rounded box mesh centered on the origin with configurable dimensions, corner and edge radius, and resolution.",
   "keywords": [
     "3D",
