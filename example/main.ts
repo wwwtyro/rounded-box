@@ -80,7 +80,7 @@ function loop() {
   const projection = mat4.perspective(mat4.create(), Math.PI / 3, canvas.width / canvas.height, 0.1, 100);
   const viewport = { x: 0, y: 0, width: canvas.width, height: canvas.height };
   regl.clear({
-    color: [0.8, 0.9, 1, 1],
+    color: [1, 1, 1, 1],
     depth: 1,
   });
   render({
