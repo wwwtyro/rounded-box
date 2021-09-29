@@ -31,7 +31,7 @@
   "module": "./lib/index.es.js",
   "types": "./lib/index",
   "scripts": {
-    "dev": "vite --config vite.example-config.js",
+    "dev": "vite --config vite.example-config.js --host 0.0.0.0",
     "build-lib": "tsc && vite --config vite.lib-config.js build",
     "build-example": "tsc && vite --config vite.example-config.js build",
     "clean": "rm -rf lib docs",

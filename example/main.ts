@@ -7,6 +7,7 @@ import { textureData } from "./texture";
 
 const regl = REGL();
 const canvas = document.getElementsByTagName("canvas")[0];
+canvas.style.touchAction = "none";
 
 const texture = regl.texture({
   data: textureData,
